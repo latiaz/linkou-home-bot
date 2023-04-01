@@ -1,0 +1,14 @@
+services:
+- type: web
+  name: line-bot-python-flask
+  env: python
+  repo: https://github.com/leo851001/sunny-home-bot.git
+  buildCommand: pip install gunicorn -r requirements.txt
+  startCommand: gunicorn app:app
+  plan: free
+  autoDeploy: false
+  envVars:
+  - key: 'SSXI62hc7jtNmeVPNTT+xfdsL+VFv3ripfSdv2JWw55qqwAVCI3PoXvrRz2LYCy+eId0sMoCjPF1Tfax0lAcSRCBNDhQZLkNLZiTmGexnYGG6BijVZXutgQ91BzjeRbp1GtAXbRNyy9JjOP8PXcxLAdB04t89/1O/w1cDnyilFU='
+    sync: false
+  - key: 'b0d4736dcf0e38346253509d22ba38b7'
+    sync: false
