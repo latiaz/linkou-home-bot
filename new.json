@@ -23,5 +23,14 @@
     "tag": "village",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"131221121\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45018.14923248843,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1227079693\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45018.15777987269,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "森聯上上謙",
+    "height": 24,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I",
+              "B1": "J", "B2": "K", "B3": "L", "B5": "M", "B6": "N", "B7": "O", "S8": "P"},
+    "tag": "upup",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"474333305\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45019.03481539352,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"410614569\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45019.05704459491,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,2,1,[0.75,0.75,0.7,0.7]],null,0]"
   }
 ]

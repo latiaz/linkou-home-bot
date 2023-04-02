@@ -8,15 +8,13 @@ from key import channel_access_token, channel_secret
 from linkou import update_linkou
 from price import update_price
 from total import update_total
-from export import export_linkou, export_price, export_total
 
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(channel_access_token())
 handler = WebhookHandler(channel_secret())
 
-# url = 'https://linkou-home-bot.onrender.com'
-url = 'https://855d-218-172-106-50.ngrok.io'
+url = 'https://linkou-home-bot.onrender.com'
 
 with open("new.json", "r") as f:
     new = json.load(f)
@@ -59,7 +57,7 @@ def handle_message(event):
                         {"type": "icon", "size": "lg",
                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"},
                         {"type": "text", "text": item['name'], "size": "lg", "align": "end",
-                         "action": {"type": "postback", "label": "action", "data": '實價登錄-' + item['name']}}]}
+                         "action": {"type": "postback", "label": "action", "data": '實價登錄/' + item['name']}}]}
             flex['body']['contents'][1]['contents'].append(data)
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='新建案の實價登錄', contents=flex))
 
@@ -71,7 +69,7 @@ def handle_message(event):
                         {"type": "icon", "size": "lg",
                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"},
                         {"type": "text", "text": item['name'], "size": "lg", "align": "end",
-                         "action": {"type": "postback", "label": "action", "data": '銷售登錄表-' + item['name']}}]}
+                         "action": {"type": "postback", "label": "action", "data": '銷售登錄表/' + item['name']}}]}
             flex['body']['contents'][1]['contents'].append(data)
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='新建案の銷售登錄表', contents=flex))
 
@@ -82,7 +80,7 @@ def handle_message(event):
 
 @handler.add(PostbackEvent)
 def post_back(event):
-    requests = event.postback.data.split("-")
+    requests = event.postback.data.split("/")
     item = [element for element in new if element['name'] == requests[1]][0]
     reply = []
     if requests[0] == '實價登錄':
@@ -104,4 +102,4 @@ def post_back(event):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5877)
+    app.run(host='0.0.0.0', port=5000)

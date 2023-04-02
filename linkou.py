@@ -49,7 +49,7 @@ def update_linkou():
             else:
                 real = [
                     data['P1MA_TYPEB_1'],  # 建案
-                    data['P1MA_TYPEB_5'],  # 棟
+                    data['P1MA_TYPEB_5'][0] + str(int(re.sub('\\D', '', data['P1MA_TYPEB_5']))),  # 棟
                     re.sub('\\D', '', data['P1MA_TYPEB_6']),  # 號
                     float(data['P1MA_TOTPRICE']) / 10000,  # 總價
                     float(data['MeanPrice']) / 10000,  # 單價
