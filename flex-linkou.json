@@ -1,0 +1,25 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "size": "xl",
+        "weight": "bold",
+        "text": "新建案の實價登錄",
+        "align": "center",
+        "decoration": "underline"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": []
+      }
+    ],
+    "backgroundColor": "#fff0f5"
+  }
+}

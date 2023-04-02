@@ -1,0 +1,71 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "In Development",
+        "color": "#ffffff",
+        "align": "center",
+        "size": "xl"
+      },
+      {
+        "type": "text",
+        "text": "87%",
+        "color": "#ffffff",
+        "align": "center",
+        "size": "md",
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              }
+            ],
+            "width": "87%",
+            "backgroundColor": "#0D8186",
+            "height": "12px"
+          }
+        ],
+        "backgroundColor": "#9FD8E36E",
+        "height": "12px",
+        "margin": "lg"
+      }
+    ],
+    "backgroundColor": "#27ACB2"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "功能開發中><",
+            "color": "#8C8C8C",
+            "size": "md"
+          }
+        ],
+        "flex": 1
+      }
+    ],
+    "backgroundColor": "#EEEEEE"
+  },
+  "styles": {
+    "footer": {
+      "separator": false
+    }
+  }
+}
