@@ -4,6 +4,9 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import *
 import os
 import json
+import threading
+import requests
+import time
 from key import channel_access_token, channel_secret
 from linkou import update_linkou
 from price import update_price
@@ -23,6 +26,24 @@ for i in new:
     os.makedirs('./static/linkou/' + i['tag'], exist_ok=True)
     os.makedirs('./static/price/' + i['tag'], exist_ok=True)
 os.makedirs('./static/total', exist_ok=True)
+
+
+def wake():
+    while 1 == 1:
+        res = requests.get(url + '/wakeup')
+        if res.status_code == 200:
+            print('繼續賣肝')
+        else:
+            print('肝不動了')
+        time.sleep(10 * 60)
+
+
+threading.Thread(target=wake).start()
+
+
+@app.route("/wakeup")
+def wake_up():
+    return "十萬青年十萬肝，加入輪班救台灣"
 
 
 @app.route("/callback", methods=['POST'])
@@ -80,17 +101,17 @@ def handle_message(event):
 
 @handler.add(PostbackEvent)
 def post_back(event):
-    requests = event.postback.data.split("/")
-    item = [element for element in new if element['name'] == requests[1]][0]
+    back = event.postback.data.split("/")
+    item = [element for element in new if element['name'] == back[1]][0]
     reply = []
-    if requests[0] == '實價登錄':
+    if back[0] == '實價登錄':
         num = len(os.listdir('./static/linkou/' + item['tag'])) - 1
         for n in range(num):
             reply.append(ImageSendMessage(
                 original_content_url=url + "/static/linkou/" + item['tag'] + "/images_" + str(n) + ".png",
                 preview_image_url=url + "/static/linkou/" + item['tag'] + "/images_" + str(n) + ".png"))
         line_bot_api.reply_message(event.reply_token, reply)
-    elif requests[0] == '銷售登錄表':
+    elif back[0] == '銷售登錄表':
         num = len(os.listdir('./static/price/' + item['tag'])) - 1
         for n in range(num):
             reply.append(ImageSendMessage(
