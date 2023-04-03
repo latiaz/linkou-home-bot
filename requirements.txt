@@ -8,5 +8,5 @@ setuptools~=50.3.2
 future~=0.18.3
 pygsheets~=2.0.6
 numpy~=1.21.6
-pandas~=1.5.3
+pandas~=1.3.5
 popdf~=0.0.3
