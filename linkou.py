@@ -3,6 +3,7 @@ import requests
 import json
 import re
 from export import export_linkou
+from surprise import x7_price
 
 with open("new.json", "r") as f:
     new = json.load(f)
@@ -45,6 +46,9 @@ def update_linkou():
                     data['P1MA_DATE'],  # 日期
                     data['P1MA_BUILD5']  # 類型
                 ]
+                price.append(real)
+            elif data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\':
+                real = x7_price(data)
                 price.append(real)
             else:
                 real = [
