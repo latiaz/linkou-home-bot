@@ -3,7 +3,7 @@ import requests
 import json
 import re
 from export import export_linkou
-from surprise import x7_price
+from surprise import upup_price, village_price, x1_x7_price, meet_price
 
 with open("new.json", "r") as f:
     new = json.load(f)
@@ -21,7 +21,7 @@ def update_linkou():
                          '&xmax=4000000&xmin=20000&ymax=40000000&ymin=200000&RPBUILD5=all&RPTYPE2=%E5%BB%BA%2B%E5%9C'
                          '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=11101&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
                          '=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100&RPLEVEL=%E5%B1%A4'
-                         '&RPSECT=%E5%8A%9B%E8%A1%8C%E6%AE%B5&RPROAD=&RPUSE=&RPZONE=&SPCASE=-&BUILD1=999&BUILD2=999'
+                         '&RPSECT=&RPROAD=&RPUSE=&RPZONE=&SPCASE=特殊-&BUILD1=999&BUILD2=999'
                          '&BUILD3=999&P1MA_TYPEB_1=' + i['name'] + '&P1MA_TYPEB_2=')
 
         data = r.json()
@@ -30,36 +30,32 @@ def update_linkou():
 
         for status in data:
             if status['P1MA_STATUS'] == '2':
-                if status['P1MA_BUILD5'] == '住宅大樓' or status['P1MA_BUILD5'] == '辦公商業大樓':
+                if status['P1MA_BUILD5'] == '住宅大樓' or status['P1MA_BUILD5'] == '辦公商業大樓' or status['P1MA_BUILD5'] == '華廈':
                     real_price.append(status)
 
         for data in real_price:
-            if data['P1MA_TYPEB_5'] == '':
-                split = data['P1MA_TYPEB_6'].split("-")
-                real = [
-                    data['P1MA_TYPEB_1'],  # 建案
-                    split[0],  # 棟
-                    re.sub('\\D', '', split[1]),  # 號
-                    float(data['P1MA_TOTPRICE']) / 10000,  # 總價
-                    float(data['MeanPrice']) / 10000,  # 單價
-                    float(data['P1MA_PARKPRICE']) / 10000,  # 車位
-                    data['P1MA_DATE'],  # 日期
-                    data['P1MA_BUILD5']  # 類型
-                ]
+            if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區':
+                real = upup_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\':
-                real = x7_price(data)
+            elif data['P1MA_TYPEB_1'] == '長耀里':
+                real = village_price(data)
+                price.append(real)
+            elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\':
+                real = x1_x7_price(data)
+                price.append(real)
+            elif data['P1MA_TYPEB_1'] == '遇見':
+                real = meet_price(data)
                 price.append(real)
             else:
                 real = [
                     data['P1MA_TYPEB_1'],  # 建案
-                    data['P1MA_TYPEB_5'][0] + str(int(re.sub('\\D', '', data['P1MA_TYPEB_5']))),  # 棟
+                    data['P1MA_TYPEB_5'],  # 棟
                     re.sub('\\D', '', data['P1MA_TYPEB_6']),  # 號
                     float(data['P1MA_TOTPRICE']) / 10000,  # 總價
                     float(data['MeanPrice']) / 10000,  # 單價
                     float(data['P1MA_PARKPRICE']) / 10000,  # 車位
                     data['P1MA_DATE'],  # 日期
-                    data['P1MA_BUILD5']  # 類型
+                    data['P1MA_BUILD5'] + '(' + data['P1MA_SPECIAL'] + ')'  # 類型 / 特殊交易
                 ]
                 price.append(real)
 
