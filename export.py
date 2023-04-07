@@ -36,12 +36,10 @@ def export_price(case):
 
 def export_total():
     form_data = {
-        'a': 'true',
-        'pc': '[null,null,null,null,null,null,null,null,null,0,[["1922292856",0,40,0,5]],10000000,null,null,null,'
-              'null,null,null,null,null,null,null,null,null,null,null,45017.056969537036,null,null,[1,null,0,0,0,0,0,'
-              '0,1,1,2,1,null,null,2,1],["A4",1,2,1,[0.75,0.75,0.7,0.7]],null,0]',
-        'gf': '[]',
-        'lds': '[]',
+        'a': 'true', 'gf': '[]', 'lds': '[]',
+        'pc': '[null,null,null,null,null,null,null,null,null,0,[["373118791"]],10000000,null,null,null,null,null,'
+              'null,null,null,null,null,null,null,null,null,45023.70489784722,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,'
+              'null,null,1,1],["A4",0,2,1,[0.75,0.75,0.7,0.7]],null,0]',
     }
     r = requests.post(url, data=form_data)
     with open("./static/total/total.pdf", 'wb') as f:
@@ -55,6 +53,4 @@ def export_total():
 
 
 if __name__ == "__main__":
-    export_linkou()
-    export_price()
     export_total()

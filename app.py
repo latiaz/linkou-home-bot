@@ -96,7 +96,10 @@ def handle_message(event):
 
     if event.message.text == '統整':
         flex = json.load(open('development.json', 'r', encoding='utf-8'))
-        line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='努力趕工中', contents=flex))
+        line_bot_api.reply_message(event.reply_token, [FlexSendMessage(alt_text='努力趕工中', contents=flex),
+                                                       ImageSendMessage(
+                                                           original_content_url=url + "/static/total/images_0.png",
+                                                           preview_image_url=url + "/static/total/images_0.png")])
 
 
 @handler.add(PostbackEvent)
