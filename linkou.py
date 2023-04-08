@@ -29,7 +29,7 @@ def update_linkou():
         price = []
 
         for status in data:
-            if status['P1MA_STATUS'] == '2':
+            if status['P1MA_STATUS'] == '2' or status['P1MA_STATUS'] == '6':
                 if status['P1MA_BUILD5'] == '住宅大樓' or status['P1MA_BUILD5'] == '辦公商業大樓' or status['P1MA_BUILD5'] == '華廈':
                     real_price.append(status)
 
