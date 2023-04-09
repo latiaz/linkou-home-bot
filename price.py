@@ -21,9 +21,9 @@ def update_price():
         for data in linkou_list:
             building = data['棟']
             floor = data['號']
-            total_price = data['總價(萬元)']
-            mean_price = data['單價(萬元/坪)']
-            park_price = data['車位總價(萬元)']
+            total_price = data['總價']
+            mean_price = data['單價']
+            park_price = data['車位']
             x = table[building]
             y = 2 * (i['height'] - int(floor)) + 2
             wks_price.update_values(x + str(y), [[str(total_price) + ' (' + str(park_price) + ')'], [mean_price]])
