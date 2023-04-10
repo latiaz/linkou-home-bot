@@ -28,7 +28,7 @@ def update_price():
             x = table[building]
             y = 2 * (i['height'] - int(floor)) + 2
             wks_price.update_values(x + str(y), [[str(total_price) + ' (' + str(park_price) + ')'], [str(mean_price) + ' (' + str(p) + ')']])
-        # export_price(i)
+        export_price(i)
     return '成功'
 
 
