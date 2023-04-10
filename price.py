@@ -24,10 +24,11 @@ def update_price():
             total_price = data['總價']
             mean_price = data['單價']
             park_price = data['車位']
+            p = data['坪數']
             x = table[building]
             y = 2 * (i['height'] - int(floor)) + 2
-            wks_price.update_values(x + str(y), [[str(total_price) + ' (' + str(park_price) + ')'], [mean_price]])
-        export_price(i)
+            wks_price.update_values(x + str(y), [[str(total_price) + ' (' + str(park_price) + ')'], [str(mean_price) + ' (' + str(p) + ')']])
+        # export_price(i)
     return '成功'
 
 

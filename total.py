@@ -19,7 +19,7 @@ def update_total():
         total = [i['name'], num, i['total'], i['total'] - num, num / i['total']]
         wks_total.update_values('A' + str(y), [total])
         y += 1
-        export_total()
+    export_total()
     return '成功'
 
 
