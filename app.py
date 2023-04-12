@@ -11,6 +11,7 @@ from key import channel_access_token, channel_secret
 from linkou import update_linkou
 from price import update_price
 from total import update_total
+from export import export_linkou, export_price, export_total
 
 app = Flask(__name__)
 
@@ -60,14 +61,29 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if event.message.text == 'update實價登錄':
+    if event.message.text == 'update linkou':
         result = update_linkou()
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
-    if event.message.text == 'update銷售登錄表':
+    if event.message.text == 'update price':
         result = update_price()
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
-    if event.message.text == 'update統整':
+    if event.message.text == 'update total':
         result = update_total()
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
+    if event.message.text == 'export linkou':
+        result = export_linkou()
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
+    if event.message.text == 'export price':
+        result = export_price()
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
+    if event.message.text == 'export total':
+        result = export_total()
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
+    if event.message.text == 'export all':
+        result_linkou = export_linkou()
+        result_price = export_price()
+        result_total = export_total()
+        result = '實價登錄：' + result_linkou + '\n' + '銷售登錄表：' + result_price + '\n' + '統整：' + result_total
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
 
     if event.message.text == '實價登錄':
