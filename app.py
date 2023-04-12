@@ -71,19 +71,25 @@ def handle_message(event):
         result = update_total()
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
     if event.message.text == 'export linkou':
-        result = export_linkou()
+        for case in new:
+            export_linkou(case)
+        result = '實價登錄：成功'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
     if event.message.text == 'export price':
-        result = export_price()
+        for case in new:
+            export_price(case)
+        result = '銷售登錄表：成功'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
     if event.message.text == 'export total':
-        result = export_total()
+        export_total()
+        result = '統整：成功'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
     if event.message.text == 'export all':
-        result_linkou = export_linkou()
-        result_price = export_price()
-        result_total = export_total()
-        result = '實價登錄：' + result_linkou + '\n' + '銷售登錄表：' + result_price + '\n' + '統整：' + result_total
+        for case in new:
+            export_linkou(case)
+            export_price(case)
+        export_total()
+        result = '匯出：成功'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
 
     if event.message.text == '實價登錄':
