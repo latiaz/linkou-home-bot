@@ -112,5 +112,25 @@
     "tag": "song",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"2084541279\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.585829398144,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"419059779\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.586272835644,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,3,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "潤鴻日麗",
+    "height": 23,
+    "total": 175,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G",
+              "B1": "H", "B2": "I", "B3": "J", "B5": "K", "B6": "L", "B7": "M"},
+    "tag": "hitachi",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1949263687\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.429684421295,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"296061051\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.430239733796,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,3,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "九揚華都",
+    "height": 23,
+    "total": 286,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F",
+              "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K", "B7": "L", "B8": "M", "B9": "N"},
+    "tag": "nine",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1204690027\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.44269923611,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"120805809\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.44465435186,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,3,1,[0.75,0.75,0.7,0.7]],null,0]"
   }
 ]
