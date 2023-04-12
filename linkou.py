@@ -5,7 +5,7 @@ import re
 from export import export_linkou
 from surprise import upup_price, village_price, x1_x7_price, meet_price
 
-with open("new.json", "r") as f:
+with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
 
 

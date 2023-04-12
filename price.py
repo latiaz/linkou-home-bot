@@ -2,7 +2,7 @@ import pygsheets
 import json
 from export import export_price
 
-with open("new.json", "r") as f:
+with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
 
 

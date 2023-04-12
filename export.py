@@ -37,8 +37,8 @@ def export_price(case):
 def export_total():
     form_data = {
         'a': 'true', 'gf': '[]', 'lds': '[]',
-        'pc': '[null,null,null,null,null,null,null,null,null,0,[["373118791"]],10000000,null,null,null,null,null,'
-              'null,null,null,null,null,null,null,null,null,45023.70489784722,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,'
+        'pc': '[null,null,null,null,null,null,null,null,null,0,[["413741838"]],10000000,null,null,null,null,null,'
+              'null,null,null,null,null,null,null,null,null,45029.00099311343,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,'
               'null,null,1,1],["A4",0,2,1,[0.75,0.75,0.7,0.7]],null,0]',
     }
     r = requests.post(url, data=form_data)
