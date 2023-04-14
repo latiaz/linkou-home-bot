@@ -118,9 +118,13 @@ def handle_message(event):
 
     if event.message.text == '統整':
         # flex = json.load(open('development.json', 'r', encoding='utf-8'))
-        line_bot_api.reply_message(event.reply_token, ImageSendMessage(
-            original_content_url=url + "/static/total/images_0.png",
-            preview_image_url=url + "/static/total/images_0.png"))
+        reply = []
+        num = len(os.listdir('./static/total')) - 1
+        for n in range(num):
+            reply.append(ImageSendMessage(
+                original_content_url=url + "/static/total/images_" + str(n) + ".png",
+                preview_image_url=url + "/static/total/images_" + str(n) + ".png"))
+        line_bot_api.reply_message(event.reply_token, reply)
 
 
 @handler.add(PostbackEvent)
