@@ -3,6 +3,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import *
 import os
+import shutil
 import json
 import threading
 import requests
@@ -27,6 +28,7 @@ for i in new:
     os.makedirs('./static/linkou/' + i['tag'], exist_ok=True)
     os.makedirs('./static/price/' + i['tag'], exist_ok=True)
 os.makedirs('./static/total', exist_ok=True)
+shutil.move('/opt/render/project/src/floor', './static/floor')
 
 
 def wake():
@@ -122,6 +124,18 @@ def handle_message(event):
             original_content_url=url + "/static/total/images_0.png",
             preview_image_url=url + "/static/total/images_0.png"))
 
+    if event.message.text == '平面圖':
+        flex = json.load(open('flex-floor.json', 'r', encoding='utf-8'))
+        for item in new:
+            data = {"type": "box", "layout": "baseline",
+                    "contents": [
+                        {"type": "icon", "size": "lg",
+                         "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"},
+                        {"type": "text", "text": item['name'], "size": "lg", "align": "end",
+                         "action": {"type": "postback", "label": "action", "data": '平面圖/' + item['name']}}]}
+            flex['body']['contents'][1]['contents'].append(data)
+        line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='新建案の平面圖', contents=flex))
+
 
 @handler.add(PostbackEvent)
 def post_back(event):
@@ -142,6 +156,10 @@ def post_back(event):
                 original_content_url=url + "/static/price/" + item['tag'] + "/images_" + str(n) + ".png",
                 preview_image_url=url + "/static/price/" + item['tag'] + "/images_" + str(n) + ".png"))
         line_bot_api.reply_message(event.reply_token, reply)
+    elif back[0] == '平面圖':
+        line_bot_api.reply_message(event.reply_token, ImageSendMessage(
+            original_content_url=url + "/static/floor/" + item['tag'] + ".png",
+            preview_image_url=url + "/static/floor/" + item['tag'] + ".png"))
     else:
         print('TEST')
 
