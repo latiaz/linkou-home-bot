@@ -53,7 +53,7 @@ def update_linkou():
                     re.sub('\\D', '', data['P1MA_TYPEB_6']),  # 號
                     float(data['P1MA_TOTPRICE']) / 10000,  # 總價
                     float(data['P1MA_PARKPRICE']) / 10000,  # 車位
-                    (float(data['P1MA_TOTPRICE']) - float(data['P1MA_PARKPRICE'])) / float(data['MeanPrice']),  # 坪數
+                    (float(data['P1MA_BUILD6']) - float(data['P1PA_PARKAREA'])) * 0.3025,  # 坪數
                     float(data['MeanPrice']) / 10000,  # 單價
                     data['P1MA_BUILD5'],  # 類型
                     data['P1MA_SPECIAL'],  # 備註
