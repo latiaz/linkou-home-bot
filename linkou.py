@@ -3,7 +3,7 @@ import requests
 import json
 import re
 from export import export_linkou
-from surprise import upup_price, village_price, x1_x7_price, meet_price
+from surprise import upup_price, village_price, x1_x7_price, meet_price, mei_price
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
@@ -27,6 +27,7 @@ def update_linkou():
         data = r.json()
         real_price = []
         price = []
+        mei = 0
 
         for status in data:
             if status['P1MA_STATUS'] != '4':
@@ -40,12 +41,16 @@ def update_linkou():
             elif data['P1MA_TYPEB_1'] == '長耀里':
                 real = village_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\' or data['P1MA_TYPEB_1'] == '敘日' or data['P1MA_TYPEB_1'] == '九揚華都':
+            elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\' or data['P1MA_TYPEB_1'] == '九揚華都':
                 real = x1_x7_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
                 real = meet_price(data)
                 price.append(real)
+            elif data['P1MA_TYPEB_1'] == '敘日':
+                real = x1_x7_price(data)
+                price.append(real)
+                mei += 1
             else:
                 real = [
                     data['P1MA_TYPEB_1'],  # 建案
@@ -60,7 +65,9 @@ def update_linkou():
                     data['P1MA_DATE'],  # 日期
                 ]
                 price.append(real)
-
+        if mei > 0:
+            real = mei_price()
+            price.append(real)
         price.sort(key=lambda arr: (arr[1], int(arr[2])))
         wks_linkou.update_values('A2', price)
         export_linkou(i)

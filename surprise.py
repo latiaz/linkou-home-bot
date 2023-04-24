@@ -1,5 +1,7 @@
 import cn2an
 import re
+import requests
+import json
 
 
 def upup_price(data):
@@ -66,3 +68,17 @@ def meet_price(data):
         data['P1MA_DATE'],  # 日期
     ]
     return real
+
+
+def mei_price():
+    r = requests.get('https://i.land.ntpc.gov.tw/landwa2/api/RPB_Alls/search3?RPTOWN1=%E6%9E%97%E5%8F%A3%E5%8D%80'
+                     '&xmax=4000000&xmin=20000&ymax=40000000&ymin=200000&RPBUILD5=all&RPTYPE2=%E5%BB%BA%2B%E5%9C'
+                     '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=11101&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
+                     '=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100&RPLEVEL=%E5%B1%A4'
+                     '&RPSECT=&RPROAD=&RPUSE=&RPZONE=&SPCASE=特殊-&BUILD1=999&BUILD2=999'
+                     '&BUILD3=999&P1MA_TYPEB_1=仟葉美&P1MA_TYPEB_2=')
+
+    data = r.json()
+    for i in data:
+        real = village_price(i)
+        return real
