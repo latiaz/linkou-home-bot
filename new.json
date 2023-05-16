@@ -19,12 +19,12 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1230020974\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45042.97682686342,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
-    "name": "森聯上上謙",
+    "name": "森聯上上謙-森越",
     "height": 24,
     "total": 212,
     "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I",
               "B1": "J", "B2": "K", "B3": "L", "B5": "M", "B6": "N", "B7": "O", "S8": "P"},
-    "tag": "upup",
+    "tag": "upup1",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"474333305\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11391273148,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"410614569\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.00675516204,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
@@ -112,6 +112,15 @@
     "tag": "song",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"2084541279\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.585829398144,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"419059779\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009798796294,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "聯太淳青",
+    "height": 11,
+    "total": 24,
+    "table": {"A1": "B", "A2": "C", "S1": "D", "S2": "E", "S3": "F", "SS": "G"},
+    "tag": "taitai",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"962851435\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.477215520834,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2103925655\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.50037214121,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
     "name": "潤鴻日麗",
