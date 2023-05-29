@@ -114,6 +114,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"419059779\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009798796294,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
+    "name": "頤昌柏舍",
+    "height": 14,
+    "total": 80,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G"},
+    "tag": "bro",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"309644944\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36848579861,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2132524255\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36900666667,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "聯太淳青",
     "height": 11,
     "total": 24,
