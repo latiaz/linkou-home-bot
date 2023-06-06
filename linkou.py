@@ -68,8 +68,14 @@ def update_linkou():
         if mei > 0:
             real = mei_price()
             price.append(real)
-        price.sort(key=lambda arr: (arr[1], int(arr[2])))
-        wks_linkou.update_values('A2', price)
+        filtered_data = [item for item in price if (item[0] == '聚美家') or not (
+                    item[1].startswith('S') or item[2] == '1' or item[2] == '01' or item[2] == 1)]
+        filtered_repeat = []
+        for item in filtered_data:
+            if not any(x[1] == item[1] and x[2] == item[2] and int(x[9]) > int(item[9]) for x in filtered_data):
+                filtered_repeat.append(item)
+        filtered_repeat.sort(key=lambda arr: (arr[1], int(arr[2])))
+        wks_linkou.update_values('A2', filtered_repeat)
         export_linkou(i)
     return '成功'
 
