@@ -7,6 +7,7 @@ from surprise import upup_price, village_price, x1_x7_price, meet_price, mei_pri
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
+    new = [item for item in new if item['name'] != '森聯摩天41']
 
 
 def update_linkou():
