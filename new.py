@@ -96,9 +96,9 @@ def update(param):
             price.append(real)
         if index == len(real_price) - 1:
             update_new(linkou)
-    formatted_a = json.dumps(today, indent=4, ensure_ascii=False)
-    print(str(formatted_a))
-    return '成功'
+    formatted = json.dumps(today, indent=4, ensure_ascii=False)
+    print(str(formatted))
+    return formatted
 
 
 def update_new(google):
