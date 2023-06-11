@@ -98,7 +98,7 @@ def update(param):
             update_new(linkou)
     formatted = json.dumps(today, indent=4, ensure_ascii=False)
     print(str(formatted))
-    return formatted
+    return today
 
 
 def update_new(google):
