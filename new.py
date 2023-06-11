@@ -26,7 +26,7 @@ def update(param):
     key = pygsheets.authorize(service_file='credentials.json')
     linkou = key.open_by_url('https://docs.google.com/spreadsheets/d/1FLEjEXlhYzobw6JhJWQuw7OUfkq2GAx1xVrv87x7ugo/')
 
-    global price, count, previous
+    global price, count, previous, today
     r = requests.get('https://i.land.ntpc.gov.tw/landwa2/api/RPB_Alls/search3?RPTOWN1=%E6%9E%97%E5%8F%A3%E5%8D%80'
                      '&xmax=4000000&xmin=20000&ymax=40000000&ymin=200000&RPBUILD5=all&RPTYPE2=%E5%BB%BA%2B%E5%9C'
                      '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=' + param['month'] + '&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
@@ -42,7 +42,6 @@ def update(param):
         if status['P1MA_STATUS'] != '4':
             if status['P1MA_BUILD5'] == '住宅大樓' or status['P1MA_BUILD5'] == '辦公商業大樓' or status['P1MA_BUILD5'] == '華廈':
                 real_price.append(status)
-    print(len(real_price))
     if len(real_price) == 0:
         return 'none'
     real_price.sort(key=lambda x: x['P1MA_TYPEB_1'])
@@ -96,9 +95,11 @@ def update(param):
             price.append(real)
         if index == len(real_price) - 1:
             update_new(linkou)
-    formatted = json.dumps(today, indent=4, ensure_ascii=False)
-    print(str(formatted))
-    return today
+    # formatted = json.dumps(today, indent=4, ensure_ascii=False)
+    # print(str(formatted))
+    result = today
+    today = {"new": {}, "update": {}}
+    return result
 
 
 def update_new(google):
