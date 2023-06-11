@@ -70,7 +70,7 @@ def handle_message(event):
         days = parts[2:]
         day_values = [int(month + day.zfill(2)) for day in days]
         param = {'month': month, 'day': day_values}
-        date_str = ', '.join(f"{str(date)[1:2]}/{str(date)[3:]}" for date in day_values)
+        date_str = ', '.join(f"{str(date)[3:5]}/{str(date)[5:]}" for date in day_values)
         result = update(param)
         if result == 'none':
             output_str = f"今日實登更新: {date_str}\n-新增-\n"
@@ -79,13 +79,14 @@ def handle_message(event):
             output_str += str(result)
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
         else:
-            output_str = f"今日實登更新: {date_str}\n-新增-\n"
-            for name, data in result['new'].items():
-                count = data['count']
-                case_list = data['case']
-                case_str = ', '.join(f'"{case}"' for case in case_list)
-                output_str += f"{name}+{count} [{case_str}]\n"
-
+            output_str = f"今日實登更新: {date_str}\n"
+            if result['new']:
+                output_str += "-新增-\n"
+                for name, data in result['new'].items():
+                    count = data['count']
+                    case_list = data['case']
+                    case_str = ', '.join(f'"{case}"' for case in case_list)
+                    output_str += f"{name}+{count} [{case_str}]\n"
             if result['update']:
                 output_str += "-更新-\n"
                 for name, data in result['update'].items():
