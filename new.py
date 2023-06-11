@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11205 8'
+message = 'update 11205 10'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -35,7 +35,7 @@ def update(param):
                      '&BUILD3=999&P1MA_TYPEB_1=&P1MA_TYPEB_2=')
     data = r.json()
     filtered_day = [item for item in data if item['P1MA_DATE'] in [str(day) for day in param['day']]]
-    filtered_case = [item for item in filtered_day if any(item['P1MA_TYPEB_1'] == case['name'] for case in new)]
+    filtered_case = [item for item in filtered_day if any(case['name'] in item['P1MA_TYPEB_1'] for case in new)]
     real_price = []
 
     for status in filtered_case:
@@ -49,14 +49,22 @@ def update(param):
 
     for index, data in enumerate(real_price):
         if count == 0:
-            previous = data['P1MA_TYPEB_1']
-            count += 1
+            if data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區':
+                previous = '森聯上上謙-森越'
+                count += 1
+            else:
+                previous = data['P1MA_TYPEB_1']
+                count += 1
         elif count != 0 and data['P1MA_TYPEB_1'] == previous:
             count += 1
         elif count != 0 and data['P1MA_TYPEB_1'] != previous:
             update_new(linkou)
-            previous = data['P1MA_TYPEB_1']
-            count = 1
+            if data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區':
+                previous = '森聯上上謙-森越'
+                count = 1
+            else:
+                previous = data['P1MA_TYPEB_1']
+                count = 1
         if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區':
             real = upup_price(data)
             price.append(real)
