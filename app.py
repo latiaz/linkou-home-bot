@@ -12,6 +12,7 @@ from key import channel_access_token, channel_secret
 from linkou import update_linkou
 from price import update_price
 from total import update_total
+from new import update
 from export import export_linkou, export_price, export_total
 
 app = Flask(__name__)
@@ -63,6 +64,14 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    if event.message.text.startswith('new'):
+        parts = event.message.text.split(' ')
+        month = parts[1]
+        days = parts[2:]
+        day_values = [int(month + day.zfill(2)) for day in days]
+        param = {'month': month, 'day': day_values}
+        result = update(param)
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=str(result)))
     if event.message.text == 'update linkou':
         result = update_linkou()
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
