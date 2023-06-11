@@ -70,8 +70,30 @@ def handle_message(event):
         days = parts[2:]
         day_values = [int(month + day.zfill(2)) for day in days]
         param = {'month': month, 'day': day_values}
+        date_str = ', '.join(str(date) for date in day_values)
         result = update(param)
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=str(result)))
+        if result == 'none':
+            output_str = f"今日實登更新: {date_str}\n-新增-\n"
+            output_str += str(result) + "\n"
+            output_str += "-更新-\n"
+            output_str += str(result)
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
+        else:
+            output_str = f"今日實登更新: {date_str}\n-新增-\n"
+            for name, data in result['new'].items():
+                count = data['count']
+                case_list = data['case']
+                case_str = ', '.join(f'"{case}"' for case in case_list)
+                output_str += f"{name}+{count} [{case_str}]\n"
+
+            if result['update']:
+                output_str += "-更新-\n"
+                for name, data in result['update'].items():
+                    count = data['count']
+                    case_list = data['case']
+                    case_str = ', '.join(f'"{case}"' for case in case_list)
+                    output_str += f"{name}+{count} [{case_str}]\n"
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
     if event.message.text == 'update linkou':
         result = update_linkou()
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=result))
