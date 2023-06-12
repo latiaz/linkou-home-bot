@@ -104,7 +104,7 @@ def update(param):
 
 def update_new(google):
     global price, count, previous
-    print(previous, count)
+    # print(previous, count)
     wks_price = google.worksheet_by_title(previous + '-實價登錄')
     price_list = wks_price.get_all_records()
     converted_data = [[
