@@ -1,6 +1,35 @@
 [
   {
-    "name": "森聯上上謙-森治",
+    "name": "璽來登日朗",
+    "height": 17,
+    "total": 173,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F",
+              "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K", "B7": "L"},
+    "tag": "sunny",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1095134799\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11143335648,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"937922844\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45042.97796409723,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "立軒天玥",
+    "height": 15,
+    "total": 98,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H"},
+    "tag": "skymoon",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"4873354\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.112413993054,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1230020974\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45042.97682686342,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "森聯上上謙-森越",
+    "height": 24,
+    "total": 212,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I",
+              "B1": "J", "B2": "K", "B3": "L", "B5": "M", "B6": "N", "B7": "O"},
+    "tag": "upup1",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"474333305\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11391273148,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"410614569\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.00675516204,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "森聯上上謙-森治社區",
     "height": 15,
     "total": 217,
     "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I",
@@ -8,5 +37,138 @@
     "tag": "upup2",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1706084004\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45090.12414393519,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1479398436\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45090.12454837963,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "長耀里",
+    "height": 26,
+    "total": 198,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I"},
+    "tag": "village",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"131221121\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.112775381946,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1227079693\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.006008738426,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "長耀加",
+    "height": 20,
+    "total": 114,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F", "F": "G"},
+    "tag": "plus",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1982636334\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.113544583335,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"906454256\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.006337314815,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "侘壹",
+    "height": 14,
+    "total": 78,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E",
+              "B1": "F", "B2": "G"},
+    "tag": "x1",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1850907152\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11468947917,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"516720288\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.0085046875,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "侘極",
+    "height": 15,
+    "total": 108,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E",
+              "B1": "F", "B2": "G", "B3": "H", "B5": "I"},
+    "tag": "x7",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"723019702\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11504763889,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"367394628\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.00880597222,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "原昕吾為",
+    "height": 15,
+    "total": 58,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E"},
+    "tag": "circle",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"64830405\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.114297928245,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"274783007\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.008216574075,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "遇見",
+    "height": 15,
+    "total": 110,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E",
+              "B1": "F", "B2": "G", "B3": "H", "B5": "I"},
+    "tag": "meet",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"584541235\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11548458334,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1837191315\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009091562504,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "敘日",
+    "height": 13,
+    "total": 42,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E"},
+    "tag": "sun",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"695599393\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.69966890046,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1267048196\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.01007079861,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "聚美家",
+    "height": 6,
+    "total": 31,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G"},
+    "tag": "beauty",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1589818454\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11586844907,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1502068896\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009436886576,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "頤昌松琚",
+    "height": 15,
+    "total": 65,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F"},
+    "tag": "song",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"2084541279\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.585829398144,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"419059779\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009798796294,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "頤昌柏舍",
+    "height": 14,
+    "total": 73,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G"},
+    "tag": "bro",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"309644944\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36848579861,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2132524255\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36900666667,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "聯太淳青",
+    "height": 11,
+    "total": 20,
+    "table": {"A1": "B", "A2": "C"},
+    "tag": "taitai",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"962851435\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.477215520834,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2103925655\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.50037214121,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "潤鴻日麗",
+    "height": 23,
+    "total": 175,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G",
+              "B1": "H", "B2": "I", "B3": "J", "B5": "K", "B6": "L", "B7": "M"},
+    "tag": "hitachi",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1949263687\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.429684421295,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"296061051\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.01042496528,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "九揚華都",
+    "height": 23,
+    "total": 286,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F",
+              "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K", "B7": "L", "B8": "M", "B9": "N"},
+    "tag": "nine",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1204690027\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45028.55251489583,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.19685039370078738,0.19685039370078738,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"120805809\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.01071127315,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "森聯摩天41",
+    "height": 41,
+    "total": 232,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "B1": "E", "B2": "F", "B3": "G", "S": "H"},
+    "addr": {"７３": "A1", "７１": "A2", "６９": "A3", "７５": "B1", "７７": "B2", "７９": "B3"},
+    "tag": "fortyone",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1936289523\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.596773275465,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.19685039370078738,0.19685039370078738,0.7,0.7]],null,0,[]]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"208471879\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.60954690972,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   }
 ]
