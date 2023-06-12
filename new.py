@@ -64,7 +64,7 @@ def update(param):
             else:
                 previous = data['P1MA_TYPEB_1']
                 count = 1
-        if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區':
+        if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區':
             real = upup_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '長耀里':
