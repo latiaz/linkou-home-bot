@@ -20,7 +20,7 @@ def update_linkou():
 
             r = requests.get('https://i.land.ntpc.gov.tw/landwa2/api/RPA_Alls/search3?RPTOWN1=%E6%9E%97%E5%8F%A3%E5'
                              '%8D%80&xmax=286381&xmin=286381&ymax=2773297&ymin=2773297&RPBUILD5=all&RPTYPE2=%E5%BB%BA'
-                             '%2B%E5%9C%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=10404&YME=11204&CA1=0&CA2'
+                             '%2B%E5%9C%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=10404&YME=11804&CA1=0&CA2'
                              '=100000&FA1=0&FA2=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100'
                              '&RPLEVEL=%E5%B1%A4&RPSECT=%E5%BB%BA%E6%9E%97%E6%AE%B5&RPROAD=&RPUSE=&RPZONE=&SPCASE=%E7'
                              '%89%B9%E6%AE%8A-&BUILD1=999&BUILD2=999&BUILD3=999')
