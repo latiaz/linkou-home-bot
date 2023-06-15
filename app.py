@@ -66,7 +66,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     user_id = event.source.userId
-    threading.Thread(target=user_profile(user_id)).start()
+    threading.Thread(target=user_profile, args=(user_id,)).start()
     if event.message.text.startswith('new'):
         parts = event.message.text.split(' ')
         month = parts[1]
