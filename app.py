@@ -14,6 +14,7 @@ from price import update_price
 from total import update_total
 from new import update
 from export import export_linkou, export_price, export_total
+from profile import user_profile
 
 app = Flask(__name__)
 
@@ -64,6 +65,8 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    user_id = event.source.userId
+    threading.Thread(target=user_profile(user_id)).start()
     if event.message.text.startswith('new'):
         parts = event.message.text.split(' ')
         month = parts[1]
