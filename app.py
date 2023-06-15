@@ -65,7 +65,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    user_id = event.source.userId
+    user_id = event.source.user_id
     threading.Thread(target=user_profile, args=(user_id,)).start()
     if event.message.text.startswith('new'):
         parts = event.message.text.split(' ')
