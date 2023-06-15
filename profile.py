@@ -20,7 +20,9 @@ def user_profile(user):
         if response.status_code == 200:
             data = response.json()
             user_all = [[str(d['displayName']), str(d['userId']), str(d['statusMessage']), str(d['pictureUrl'])] for d in user_list]
-            profile = [data['displayName'], data['userId'], data['statusMessage'] if data['statusMessage'] is not None else '', data['pictureUrl']]
+            status_message = data.get('statusMessage', '')
+            picture_url = data.get('pictureUrl', '')
+            profile = [data['displayName'], data['userId'], status_message, picture_url]
             user_all.append(profile)
             wks_user.update_values('A2', user_all)
         else:
