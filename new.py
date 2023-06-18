@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11205 10'
+message = 'update 11205 17 18'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -140,6 +140,7 @@ def update_new(google):
 
 def price_new(google):
     global price, previous
+    price = [item for item in price if (item[0] == '聚美家') or not (item[1].startswith('S') or item[2] == '1' or item[2] == '01' or item[2] == 1)]
     wks_price = google.worksheet_by_title(previous + '-銷售登錄')
     target = next((item for item in new if item['name'] == previous), None)
     height = target['height']
