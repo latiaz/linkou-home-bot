@@ -19,6 +19,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"78883349\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.03043554398,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
   },
   {
+    "name": "聯虹星耀",
+    "height": 15,
+    "total": 70,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F"},
+    "tag": "star",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1847631683\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.101349687495,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1426897353\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.10176109953,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
     "name": "聯虹君耀",
     "height": 20,
     "total": 112,
@@ -26,6 +35,6 @@
               "B1": "E", "B2": "F", "B3": "G"},
     "tag": "zoolol",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1878989700\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.03084796296,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"78883349\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45096.715189062495,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"568468729\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.083320150465,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
   }
 ]

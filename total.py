@@ -7,57 +7,63 @@ from export import export_total
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
 
+old = json.load(open('old.json', 'r', encoding='utf-8'))
+total = new + old
 
-def update_total():
+
+def update_total(total):
     key = pygsheets.authorize(service_file='credentials.json')
     linkou = key.open_by_url('https://docs.google.com/spreadsheets/d/1FLEjEXlhYzobw6JhJWQuw7OUfkq2GAx1xVrv87x7ugo/')
     wks_total = linkou.worksheet_by_title('統整')
     wks_average = linkou.worksheet_by_title('單價統整')
     y = 3
-    summary_each = [0] * 11
+    summary_each = [0] * 12
     summary_total = [0] * 3
-    summary_average = [0] * 11
-    for i in new:
-        each = [0] * 11
-        average = [0] * 11
+    summary_average = [0] * 12
+    for i in total:
+        each = [0] * 12
+        average = [0] * 12
         print(i['name'])
         wks_linkou = linkou.worksheet_by_title(i['name'] + '-實價登錄')
         linkou_list = wks_linkou.get_all_records()
         for case in linkou_list:
             date = str(case['交易日期'])[:5]
             if date == '11101' or date == '11102' or date == '11103':
-                each[0] += 1
-                average[0] += case['單價']
-            elif date == '11104' or date == '11105' or date == '11106':
                 each[1] += 1
                 average[1] += case['單價']
-            elif date == '11107' or date == '11108' or date == '11109':
+            elif date == '11104' or date == '11105' or date == '11106':
                 each[2] += 1
                 average[2] += case['單價']
-            elif date == '11110':
+            elif date == '11107' or date == '11108' or date == '11109':
                 each[3] += 1
                 average[3] += case['單價']
-            elif date == '11111':
+            elif date == '11110':
                 each[4] += 1
                 average[4] += case['單價']
-            elif date == '11112':
+            elif date == '11111':
                 each[5] += 1
                 average[5] += case['單價']
-            elif date == '11201':
+            elif date == '11112':
                 each[6] += 1
                 average[6] += case['單價']
-            elif date == '11202':
+            elif date == '11201':
                 each[7] += 1
                 average[7] += case['單價']
-            elif date == '11203':
+            elif date == '11202':
                 each[8] += 1
                 average[8] += case['單價']
-            elif date == '11204':
+            elif date == '11203':
                 each[9] += 1
                 average[9] += case['單價']
-            elif date == '11205':
+            elif date == '11204':
                 each[10] += 1
                 average[10] += case['單價']
+            elif date == '11205':
+                each[11] += 1
+                average[11] += case['單價']
+            else:
+                each[0] += 1
+                average[0] += case['單價']
         name = [i['name']]
         num = len(linkou_list)
         total = [num, i['total'], i['total'] - num, num / i['total']]
@@ -84,4 +90,4 @@ def update_total():
 
 
 if __name__ == "__main__":
-    update_total()
+    update_total(total)
