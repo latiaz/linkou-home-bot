@@ -39,13 +39,13 @@ def update_linkou():
             if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區':
                 real = upup_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '聯虹君耀':
+            elif data['P1MA_TYPEB_1'] == '長耀里':
                 real = village_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\' or data['P1MA_TYPEB_1'] == '九揚華都':
                 real = x1_x7_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' or data['P1MA_TYPEB_1'] == '潤鴻日麗' or data['P1MA_TYPEB_1'] == '新潤Double':
+            elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
                 real = meet_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '敘日':

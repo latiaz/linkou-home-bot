@@ -1,0 +1,31 @@
+[
+  {
+    "name": "立軒天玥",
+    "height": 15,
+    "total": 98,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H"},
+    "tag": "skymoon",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"4873354\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.112413993054,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1230020974\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45042.97682686342,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "新潤Double",
+    "height": 24,
+    "total": 308,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H",
+              "B1": "I", "B2": "J", "B3": "K", "B5": "L", "B6": "M", "B7": "N", "B8": "O"},
+    "tag": "double",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1188880159\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.02998677084,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,2,1,[0.19685039370078738,0.19685039370078738,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"78883349\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.03043554398,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "聯虹君耀",
+    "height": 20,
+    "total": 112,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G"},
+    "tag": "zoolol",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1878989700\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.03084796296,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"78883349\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45096.715189062495,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  }
+]

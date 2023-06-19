@@ -26,11 +26,14 @@ url = 'https://linkou-home-bot.onrender.com'
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
 
+old = json.load(open('old.json', 'r', encoding='utf-8'))
+
 for i in new:
     os.makedirs('./static/linkou/' + i['tag'], exist_ok=True)
     os.makedirs('./static/price/' + i['tag'], exist_ok=True)
 os.makedirs('./static/total', exist_ok=True)
 shutil.move('/opt/render/project/src/floor', './static/floor')
+shutil.move('/opt/render/project/src/old', './static/old')
 
 
 def wake():
@@ -153,8 +156,31 @@ def handle_message(event):
             flex['body']['contents'][1]['contents'].append(data)
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='新建案の銷售登錄表', contents=flex))
 
+    if event.message.text == '實價登錄(完銷)':
+        flex = json.load(open('flex-linkou-old.json', 'r', encoding='utf-8'))
+        for item in old:
+            data = {"type": "box", "layout": "baseline",
+                    "contents": [
+                        {"type": "icon", "size": "lg",
+                         "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"},
+                        {"type": "text", "text": item['name'], "size": "lg", "align": "end",
+                         "action": {"type": "postback", "label": "action", "data": '實價登錄(完銷)/' + item['tag']}}]}
+            flex['body']['contents'][1]['contents'].append(data)
+        line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='完銷建案の實價登錄', contents=flex))
+
+    if event.message.text == '銷售登錄表(完銷)':
+        flex = json.load(open('flex-price-old.json', 'r', encoding='utf-8'))
+        for item in old:
+            data = {"type": "box", "layout": "baseline",
+                    "contents": [
+                        {"type": "icon", "size": "lg",
+                         "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"},
+                        {"type": "text", "text": item['name'], "size": "lg", "align": "end",
+                         "action": {"type": "postback", "label": "action", "data": '銷售登錄表(完銷)/' + item['tag']}}]}
+            flex['body']['contents'][1]['contents'].append(data)
+        line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='完銷建案の銷售登錄表', contents=flex))
+
     if event.message.text == '統整':
-        # flex = json.load(open('development.json', 'r', encoding='utf-8'))
         reply = []
         num = len(os.listdir('./static/total')) - 1
         for n in range(num):
@@ -165,7 +191,8 @@ def handle_message(event):
 
     if event.message.text == '平面圖':
         flex = json.load(open('flex-floor.json', 'r', encoding='utf-8'))
-        for item in new:
+        floor = json.load(open('floor.json', 'r', encoding='utf-8'))
+        for item in floor:
             data = {"type": "box", "layout": "baseline",
                     "contents": [
                         {"type": "icon", "size": "lg",
@@ -194,6 +221,20 @@ def post_back(event):
             reply.append(ImageSendMessage(
                 original_content_url=url + "/static/price/" + tag + "/images_" + str(n) + ".png",
                 preview_image_url=url + "/static/price/" + tag + "/images_" + str(n) + ".png"))
+        line_bot_api.reply_message(event.reply_token, reply)
+    elif back[0] == '實價登錄(完銷)':
+        num = len(os.listdir('./static/old/linkou/' + tag)) - 1
+        for n in range(num):
+            reply.append(ImageSendMessage(
+                original_content_url=url + "/static/old/linkou/" + tag + "/images_" + str(n) + ".png",
+                preview_image_url=url + "/static/old/linkou/" + tag + "/images_" + str(n) + ".png"))
+        line_bot_api.reply_message(event.reply_token, reply)
+    elif back[0] == '銷售登錄表(完銷)':
+        num = len(os.listdir('./static/old/price/' + tag)) - 1
+        for n in range(num):
+            reply.append(ImageSendMessage(
+                original_content_url=url + "/static/old/price/" + tag + "/images_" + str(n) + ".png",
+                preview_image_url=url + "/static/old/price/" + tag + "/images_" + str(n) + ".png"))
         line_bot_api.reply_message(event.reply_token, reply)
     elif back[0] == '平面圖':
         line_bot_api.reply_message(event.reply_token, ImageSendMessage(
