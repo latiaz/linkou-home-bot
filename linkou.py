@@ -20,7 +20,7 @@ def update_linkou():
 
         r = requests.get('https://i.land.ntpc.gov.tw/landwa2/api/RPB_Alls/search3?RPTOWN1=%E6%9E%97%E5%8F%A3%E5%8D%80'
                          '&xmax=4000000&xmin=20000&ymax=40000000&ymin=200000&RPBUILD5=all&RPTYPE2=%E5%BB%BA%2B%E5%9C'
-                         '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=11101&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
+                         '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=10001&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
                          '=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100&RPLEVEL=%E5%B1%A4'
                          '&RPSECT=&RPROAD=&RPUSE=&RPZONE=&SPCASE=特殊-&BUILD1=999&BUILD2=999'
                          '&BUILD3=999&P1MA_TYPEB_1=' + i['name'] + '&P1MA_TYPEB_2=')
@@ -39,13 +39,13 @@ def update_linkou():
             if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區':
                 real = upup_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '長耀里':
+            elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '聯虹君耀':
                 real = village_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\' or data['P1MA_TYPEB_1'] == '九揚華都':
                 real = x1_x7_price(data)
                 price.append(real)
-            elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
+            elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' or data['P1MA_TYPEB_1'] == '潤鴻日麗' or data['P1MA_TYPEB_1'] == '新潤Double':
                 real = meet_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '敘日':
