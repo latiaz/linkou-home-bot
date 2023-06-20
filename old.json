@@ -36,5 +36,16 @@
     "tag": "zoolol",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1878989700\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.03084796296,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"568468729\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45097.083320150465,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "富堡仁愛",
+    "height": 15,
+    "total": 200,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F",
+              "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K",
+              "C1": "L", "C2": "M", "C3": "N", "C5": "O", "C6": "P"},
+    "tag": "benevolence",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1720260859\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45098.00725760417,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1616238192\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45098.00759447917,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
   }
 ]
