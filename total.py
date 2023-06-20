@@ -4,14 +4,13 @@ import numpy as np
 np.seterr(divide='ignore', invalid='ignore')
 from export import export_total
 
-with open("new.json", "r", encoding="utf-8") as f:
-    new = json.load(f)
 
-old = json.load(open('old.json', 'r', encoding='utf-8'))
-total = new + old
+def update_total():
+    with open("new.json", "r", encoding="utf-8") as f:
+        new = json.load(f)
 
-
-def update_total(total):
+    old = json.load(open('old.json', 'r', encoding='utf-8'))
+    total = new + old
     key = pygsheets.authorize(service_file='credentials.json')
     linkou = key.open_by_url('https://docs.google.com/spreadsheets/d/1FLEjEXlhYzobw6JhJWQuw7OUfkq2GAx1xVrv87x7ugo/')
     wks_total = linkou.worksheet_by_title('統整')
@@ -90,4 +89,4 @@ def update_total(total):
 
 
 if __name__ == "__main__":
-    update_total(total)
+    update_total()
