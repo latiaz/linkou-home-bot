@@ -16,12 +16,12 @@ def update_total():
     wks_total = linkou.worksheet_by_title('統整')
     wks_average = linkou.worksheet_by_title('單價統整')
     y = 3
-    summary_each = [0] * 12
+    summary_each = [0] * 13
     summary_total = [0] * 3
-    summary_average = [0] * 12
+    summary_average = [0] * 13
     for i in total:
-        each = [0] * 12
-        average = [0] * 12
+        each = [0] * 13
+        average = [0] * 13
         print(i['name'])
         wks_linkou = linkou.worksheet_by_title(i['name'] + '-實價登錄')
         linkou_list = wks_linkou.get_all_records()
@@ -60,6 +60,9 @@ def update_total():
             elif date == '11205':
                 each[11] += 1
                 average[11] += case['單價']
+            elif date == '11206':
+                each[12] += 1
+                average[12] += case['單價']
             else:
                 each[0] += 1
                 average[0] += case['單價']
