@@ -142,6 +142,16 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2103925655\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.50037214121,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "聿德觀璟",
+    "height": 15,
+    "total": 83,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G"},
+    "tag": "yuder",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"138965531\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45111.07698384259,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2043930752\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45111.07725628473,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "潤鴻日麗",
     "height": 23,
     "total": 175,
@@ -175,7 +185,7 @@
     "height": 41,
     "total": 232,
     "table": {"A1": "B", "A2": "C", "A3": "D", "B1": "E", "B2": "F", "B3": "G", "S": "H"},
-    "addr": {"７３": "A1", "７１": "A2", "６９": "A3", "７５": "B1", "７７": "B2", "７９": "B3"},
+    "addr": {"７３": "A1", "７１": "A2", "６９": "A3", "７５": "B1", "７７": "B2", "７９": "B3", "８３": "B4"},
     "tag": "fortyone",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1936289523\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.596773275465,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.19685039370078738,0.19685039370078738,0.7,0.7]],null,0,[]]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"208471879\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.60954690972,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
