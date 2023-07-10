@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11206 01 02 03'
+message = 'update 11206 8 9 10'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]

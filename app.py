@@ -83,6 +83,9 @@ def handle_message(event):
             output_str += str(result) + "\n"
             output_str += "-更新-\n"
             output_str += str(result)
+            output_str += ''
+            output_str += '林口の實價登錄'
+            output_str += '@812wuyhe'
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
         else:
             output_str = f"今日實登更新: {date_str}\n"
@@ -100,6 +103,9 @@ def handle_message(event):
                     case_list = data['case']
                     case_str = ', '.join(f'"{case}"' for case in case_list)
                     output_str += f"{name}+{count} [{case_str}]\n"
+            output_str += ''
+            output_str += '林口の實價登錄'
+            output_str += '@812wuyhe'
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
     if event.message.text == 'update linkou':
         result = update_linkou()
