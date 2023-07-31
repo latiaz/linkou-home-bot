@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11206 8 9 10'
+message = 'update 11206 29 30'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -73,7 +73,7 @@ def update(param):
         elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟':
             real = x1_x7_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
+        elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' and data['P1MA_TYPEB_5'] != 'A5' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
             real = meet_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '敘日':
@@ -140,6 +140,7 @@ def update_new(google):
 
 def price_new(google):
     global price, previous
+    print(previous)
     price = [item for item in price if (item[0] == '聚美家') or not (item[1].startswith('S') or item[2] == '1' or item[2] == '01' or item[2] == 1)]
     wks_price = google.worksheet_by_title(previous + '-銷售登錄')
     target = next((item for item in new if item['name'] == previous), None)
