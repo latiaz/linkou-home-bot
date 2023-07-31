@@ -70,7 +70,7 @@ def update(param):
         elif data['P1MA_TYPEB_1'] == '長耀里':
             real = village_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟':
+        elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟' or data['P1MA_TYPEB_1'] == '和洲艾美':
             real = x1_x7_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' and data['P1MA_TYPEB_5'] != 'A5' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
