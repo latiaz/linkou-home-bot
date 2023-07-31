@@ -28,12 +28,12 @@ with open("new.json", "r", encoding="utf-8") as f:
 
 old = json.load(open('old.json', 'r', encoding='utf-8'))
 
-# for i in new:
-#     os.makedirs('./static/linkou/' + i['tag'], exist_ok=True)
-#     os.makedirs('./static/price/' + i['tag'], exist_ok=True)
-# os.makedirs('./static/total', exist_ok=True)
-# shutil.move('/opt/render/project/src/floor', './static/floor')
-# shutil.move('/opt/render/project/src/old', './static/old')
+for i in new:
+    os.makedirs('./static/linkou/' + i['tag'], exist_ok=True)
+    os.makedirs('./static/price/' + i['tag'], exist_ok=True)
+os.makedirs('./static/total', exist_ok=True)
+shutil.move('/opt/render/project/src/floor', './static/floor')
+shutil.move('/opt/render/project/src/old', './static/old')
 
 
 def wake():
@@ -251,41 +251,4 @@ def post_back(event):
 
 
 if __name__ == "__main__":
-    # app.run(host='0.0.0.0', port=5000)
-    aaa = 'new 11206 29 30'
-    parts = aaa.split(' ')
-    month = parts[1]
-    days = parts[2:]
-    day_values = [int(month + day.zfill(2)) for day in days]
-    param = {'month': month, 'day': day_values}
-    date_str = ', '.join(f"{str(date)[3:5]}/{str(date)[5:]}" for date in day_values)
-    result = update(param)
-    if result == 'none':
-        output_str = f"今日實登更新: {date_str}\n-新增-\n"
-        output_str += str(result) + "\n"
-        output_str += "-更新-\n"
-        output_str += str(result) + "\n"
-        output_str += "\n"
-        output_str += '林口の實價登錄\n'
-        output_str += '@812wuyhe'
-        # line_bot_api.reply_message(event.reply_token, TextSendMessage(text=output_str))
-    else:
-        output_str = f"今日實登更新: {date_str}\n"
-        if result['new']:
-            output_str += "-新增-\n"
-            for name, data in result['new'].items():
-                count = data['count']
-                case_list = data['case']
-                case_str = ', '.join(f'"{case}"' for case in case_list)
-                output_str += f"{name}+{count} [{case_str}]\n"
-        if result['update']:
-            output_str += "-更新-\n"
-            for name, data in result['update'].items():
-                count = data['count']
-                case_list = data['case']
-                case_str = ', '.join(f'"{case}"' for case in case_list)
-                output_str += f"{name}+{count} [{case_str}]\n"
-        output_str += "\n"
-        output_str += '林口の實價登錄\n'
-        output_str += '@812wuyhe'
-    print(output_str)
+    app.run(host='0.0.0.0', port=5000)
