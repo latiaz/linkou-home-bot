@@ -41,6 +41,16 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2102477254\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.075156631945,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "森鉅旭",
+    "height": 7,
+    "total": 71,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G",
+              "B1": "H", "B2": "I", "B3": "J", "B5": "K", "B6": "L", "B7": "M"},
+    "tag": "sungg",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1358156369\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45139.15678587963,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1608231252\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45139.15714388889,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "聯廣闊境",
     "height": 22,
     "total": 110,
