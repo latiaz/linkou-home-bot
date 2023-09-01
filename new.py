@@ -67,7 +67,7 @@ def update(param):
         if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區':
             real = upup_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '長耀里':
+        elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝':
             real = village_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟' or data['P1MA_TYPEB_1'] == '和洲艾美':

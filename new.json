@@ -126,16 +126,6 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1267048196\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.01007079861,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
-    "name": "聚美家",
-    "height": 6,
-    "total": 31,
-    "table": {"A1": "B", "A2": "C", "A3": "D",
-              "B1": "E", "B2": "F", "B3": "G"},
-    "tag": "beauty",
-    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1589818454\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11586844907,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1502068896\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009436886576,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
-  },
-  {
     "name": "群祥囍",
     "height": 13,
     "total": 50,
@@ -143,6 +133,15 @@
     "tag": "ccccc",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1158688519\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45098.041237604164,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"170910216\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45098.04148428241,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "盛德藝",
+    "height": 13,
+    "total": 63,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F"},
+    "tag": "cccccc",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"617417565\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45170.35089478009,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1964261204\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45170.35144436343,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
   },
   {
     "name": "頤昌松琚",
