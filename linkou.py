@@ -3,7 +3,7 @@ import requests
 import json
 import re
 from export import export_linkou
-from surprise import upup_price, village_price, x1_x7_price, meet_price, mei_price
+from surprise import upup_price, village_price, x1_x7_price, meet_price, mei_price, insight_price
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
@@ -41,6 +41,9 @@ def update_linkou():
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝':
                 real = village_price(data)
+                price.append(real)
+            elif data['P1MA_TYPEB_1'] == '川弘INSIGHT':
+                real = insight_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '侘壹' or data['P1MA_TYPEB_1'] == '侘極' or data['P1MA_TYPEB_1'] == '侘極\\' or data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟':
                 real = x1_x7_price(data)

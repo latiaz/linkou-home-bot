@@ -202,6 +202,27 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1825062622\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45139.115449212964,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "力璞學",
+    "height": 9,
+    "total": 93,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G", "B5": "H",
+              "C1": "I", "C2": "J",
+              "D1": "K", "D2": "L"},
+    "tag": "learn",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1411590544\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.402603807874,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1511596118\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.40308962963,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "川弘INSIGHT",
+    "height": 8,
+    "total": 27,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E"},
+    "tag": "insight",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"800367809\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.4015425463,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1231933156\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.40208932871,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
     "name": "潤鴻日麗",
     "height": 23,
     "total": 175,

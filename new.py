@@ -2,7 +2,7 @@ import pygsheets
 import requests
 import json
 import re
-from surprise import upup_price, village_price, x1_x7_price, meet_price
+from surprise import upup_price, village_price, x1_x7_price, meet_price, insight_price
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
@@ -69,6 +69,9 @@ def update(param):
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝':
             real = village_price(data)
+            price.append(real)
+        elif data['P1MA_TYPEB_1'] == '川弘INSIGHT':
+            real = insight_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟' or data['P1MA_TYPEB_1'] == '和洲艾美':
             real = x1_x7_price(data)
