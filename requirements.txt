@@ -16,3 +16,4 @@ python-docx==0.8.11
 search4file==0.1.14
 popdf==0.0.3
 ruamel.yaml==0.17.32
+Werkzeug==2.3.7
