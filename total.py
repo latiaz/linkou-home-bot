@@ -9,19 +9,19 @@ def update_total():
     with open("new.json", "r", encoding="utf-8") as f:
         new = json.load(f)
 
-    old = json.load(open('old.json', 'r', encoding='utf-8'))
-    total = new + old
+    # old = json.load(open('old.json', 'r', encoding='utf-8'))
+    total = new
     key = pygsheets.authorize(service_file='credentials.json')
     linkou = key.open_by_url('https://docs.google.com/spreadsheets/d/1FLEjEXlhYzobw6JhJWQuw7OUfkq2GAx1xVrv87x7ugo/')
     wks_total = linkou.worksheet_by_title('統整')
     wks_average = linkou.worksheet_by_title('單價統整')
     y = 3
-    summary_each = [0] * 15
+    summary_each = [0] * 16
     summary_total = [0] * 3
-    summary_average = [0] * 15
+    summary_average = [0] * 16
     for i in total:
-        each = [0] * 15
-        average = [0] * 15
+        each = [0] * 16
+        average = [0] * 16
         print(i['name'])
         wks_linkou = linkou.worksheet_by_title(i['name'] + '-實價登錄')
         linkou_list = wks_linkou.get_all_records()
@@ -69,6 +69,9 @@ def update_total():
             elif date == '11210':
                 each[14] += 1
                 average[14] += case['單價']
+            elif date == '11211':
+                each[15] += 1
+                average[15] += case['單價']
             else:
                 each[0] += 1
                 average[0] += case['單價']
