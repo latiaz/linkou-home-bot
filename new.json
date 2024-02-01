@@ -78,6 +78,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"906454256\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.006337314815,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
+    "name": "長耀I PARK",
+    "height": 15,
+    "total": 117,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F", "F": "G", "G": "H", "H": "I"},
+    "tag": "ipark",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"937509506\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.46810599537,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"961355081\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.46884461805,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "侘壹",
     "height": 14,
     "total": 78,
@@ -221,6 +230,25 @@
     "tag": "insight",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"800367809\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.4015425463,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0,null]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1231933156\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45194.40208932871,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
+  },
+  {
+    "name": "泓昇昇美",
+    "height": 7,
+    "total": 40,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G"},
+    "tag": "hongsen",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"524304402\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.4978553125,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1425437201\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.49818576389,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "宏樸日心說",
+    "height": 8,
+    "total": 22,
+    "table": {"A": "B", "B": "C", "C": "D"},
+    "tag": "hongpu",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"398803432\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.472205474536,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2098122905\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.47332774306,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,2,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
     "name": "潤鴻日麗",
