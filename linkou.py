@@ -36,7 +36,7 @@ def update_linkou():
                     real_price.append(status)
 
         for data in real_price:
-            if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區':
+            if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)':
                 real = upup_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝':

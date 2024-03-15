@@ -10,6 +10,33 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"937922844\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45042.97796409723,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
+    "name": "聯廣闊境",
+    "height": 22,
+    "total": 110,
+    "table": {"A": "B", "B": "C", "C": "D", "C1": "E", "C2": "F", "D": "G", "E": "H"},
+    "tag": "sensepark",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"57183081\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.07406670139,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"924183378\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.074498449074,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "福樺富貴莊園",
+    "height": 23,
+    "total": 65,
+    "table": {"A": "B", "B": "C", "C": "D"},
+    "tag": "fuflower",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1838166174\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.440538333336,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1928854342\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.44102886574,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "亞昕森匯",
+    "height": 23,
+    "total": 175,
+    "table": {"C1": "B", "C2": "C", "C3": "D", "C5": "E", "C6": "F", "C7": "G", "C8": "H", "C9": "I", "C10": "J"},
+    "tag": "yaxin",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1142694870\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.45513460648,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1073167948\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.457185949075,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "森聯上上謙-森越",
     "height": 24,
     "total": 212,
@@ -51,15 +78,6 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1608231252\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45139.15714388889,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
-    "name": "聯廣闊境",
-    "height": 22,
-    "total": 110,
-    "table": {"A": "B", "B": "C", "C": "D", "C1": "E", "C2": "F", "D": "G", "E": "H"},
-    "tag": "sensepark",
-    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"57183081\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.07406670139,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"924183378\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.074498449074,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
-  },
-  {
     "name": "長耀里",
     "height": 26,
     "total": 198,
@@ -85,16 +103,6 @@
     "tag": "ipark",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"937509506\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.46810599537,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"961355081\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45323.46884461805,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
-  },
-  {
-    "name": "侘壹",
-    "height": 14,
-    "total": 78,
-    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E",
-              "B1": "F", "B2": "G"},
-    "tag": "x1",
-    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1850907152\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11468947917,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"516720288\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.0085046875,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
   },
   {
     "name": "侘極",
@@ -153,15 +161,6 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1964261204\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45170.35144436343,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,null]"
   },
   {
-    "name": "頤昌松琚",
-    "height": 15,
-    "total": 65,
-    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F"},
-    "tag": "song",
-    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"2084541279\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.585829398144,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"419059779\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009798796294,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
-  },
-  {
     "name": "頤昌柏舍",
     "height": 14,
     "total": 73,
@@ -169,15 +168,6 @@
     "tag": "bro",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"309644944\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36848579861,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2132524255\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45075.36900666667,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
-  },
-  {
-    "name": "聯太淳青",
-    "height": 11,
-    "total": 20,
-    "table": {"A1": "B", "A2": "C"},
-    "tag": "taitai",
-    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"962851435\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.477215520834,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]",
-    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"2103925655\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45062.50037214121,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
     "name": "聿德觀璟",
