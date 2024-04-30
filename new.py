@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11302 12'
+message = 'update 11303 27 28 29 30'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -174,4 +174,33 @@ def today_new(case, status):
 
 
 if __name__ == "__main__":
-    update(param)
+    # update(param)
+    result = update(param)
+    if result == 'none':
+        output_str = f"今日實登更新: {day_values}\n-新增-\n"
+        output_str += str(result) + "\n"
+        output_str += "-更新-\n"
+        output_str += str(result) + "\n"
+        output_str += "\n"
+        output_str += '林口の實價登錄\n'
+        output_str += '@812wuyhe'
+    else:
+        output_str = f"今日實登更新: {day_values}\n"
+        if result['new']:
+            output_str += "-新增-\n"
+            for name, data in result['new'].items():
+                count = data['count']
+                case_list = data['case']
+                case_str = ', '.join(f'"{case}"' for case in case_list)
+                output_str += f"{name}+{count} [{case_str}]\n"
+        if result['update']:
+            output_str += "-更新-\n"
+            for name, data in result['update'].items():
+                count = data['count']
+                case_list = data['case']
+                case_str = ', '.join(f'"{case}"' for case in case_list)
+                output_str += f"{name}+{count} [{case_str}]\n"
+        output_str += "\n"
+        output_str += '林口の實價登錄\n'
+        output_str += '@812wuyhe'
+        print(output_str)

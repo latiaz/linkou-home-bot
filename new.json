@@ -28,6 +28,17 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1928854342\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.44102886574,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "長虹天聚",
+    "height": 28,
+    "total": 486,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G",
+              "B1": "H", "B2": "I", "B3": "J", "B5": "K", "B6": "L", "B7": "M",
+              "C1": "N", "C2": "O", "C3": "P", "C5": "Q", "C6": "R", "C7": "S"},
+    "tag": "tiang",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"983148413\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45412.398520752315,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"560693617\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45412.39919914352,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "亞昕森匯·天匯(森匯)",
     "height": 23,
     "total": 175,
