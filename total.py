@@ -16,12 +16,12 @@ def update_total():
     wks_total = linkou.worksheet_by_title('統整')
     wks_average = linkou.worksheet_by_title('單價統整')
     y = 3
-    summary_each = [0] * 18
+    summary_each = [0] * 17
     summary_total = [0] * 3
-    summary_average = [0] * 18
+    summary_average = [0] * 17
     for i in total:
-        each = [0] * 18
-        average = [0] * 18
+        each = [0] * 17
+        average = [0] * 17
         print(i['name'])
         wks_linkou = linkou.worksheet_by_title(i['name'] + '-實價登錄')
         linkou_list = wks_linkou.get_all_records()
@@ -42,42 +42,39 @@ def update_total():
             elif date == '11201' or date == '11202' or date == '11203':
                 each[5] += 1
                 average[5] += case['單價']
-            elif date == '11204':
+            elif date == '11204' or date == '11205' or date == '11206':
                 each[6] += 1
                 average[6] += case['單價']
-            elif date == '11205':
+            elif date == '11207':
                 each[7] += 1
                 average[7] += case['單價']
-            elif date == '11206':
+            elif date == '11208':
                 each[8] += 1
                 average[8] += case['單價']
-            elif date == '11207':
+            elif date == '11209':
                 each[9] += 1
                 average[9] += case['單價']
-            elif date == '11208':
+            elif date == '11210':
                 each[10] += 1
                 average[10] += case['單價']
-            elif date == '11209':
+            elif date == '11211':
                 each[11] += 1
                 average[11] += case['單價']
-            elif date == '11210':
+            elif date == '11212':
                 each[12] += 1
                 average[12] += case['單價']
-            elif date == '11211':
+            elif date == '11301':
                 each[13] += 1
                 average[13] += case['單價']
-            elif date == '11212':
+            elif date == '11302':
                 each[14] += 1
                 average[14] += case['單價']
-            elif date == '11301':
+            elif date == '11303':
                 each[15] += 1
                 average[15] += case['單價']
-            elif date == '11302':
+            elif date == '11304':
                 each[16] += 1
                 average[16] += case['單價']
-            elif date == '11303':
-                each[17] += 1
-                average[17] += case['單價']
             else:
                 each[0] += 1
                 average[0] += case['單價']
