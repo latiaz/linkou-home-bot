@@ -19,6 +19,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"924183378\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.074498449074,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "富堡晶鑄",
+    "height": 27,
+    "total": 186,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F", "F": "G", "G": "H"},
+    "tag": "fubao",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1937245273\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45427.39931673611,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1691224862\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45427.399889039356,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "福樺富貴莊園",
     "height": 23,
     "total": 65,
