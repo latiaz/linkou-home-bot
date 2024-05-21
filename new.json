@@ -13,7 +13,7 @@
     "name": "聯廣闊境",
     "height": 22,
     "total": 110,
-    "table": {"A": "B", "B": "C", "C": "D", "C1": "E", "C2": "F", "D": "G", "E": "H"},
+    "table": {"A": "B", "B": "C", "C": "D", "C1": "E", "C2": "F", "D": "G", "E": "H", "Ｅ": "H"},
     "tag": "sensepark",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"57183081\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.07406670139,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"924183378\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45132.074498449074,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
