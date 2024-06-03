@@ -57,6 +57,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1073167948\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45366.457185949075,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "亞昕森匯·天匯(天匯)",
+    "height": 30,
+    "total": 180,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K"},
+    "tag": "yaxin2",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"227509859\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45446.68284418981,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1191996634\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45446.68335503472,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "森聯上上謙-森越",
     "height": 24,
     "total": 212,
@@ -152,6 +161,16 @@
     "tag": "meet",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"584541235\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.11548458334,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1837191315\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.009091562504,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "優學",
+    "height": 15,
+    "total": 93,
+    "table": {"A1": "B", "A2": "C", "A3": "D",
+              "B1": "E", "B2": "F", "B3": "G"},
+    "tag": "goodstudy",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1247153049\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45446.690723101856,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"590395082\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45446.69121984954,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
     "name": "敘日",
