@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11305 4'
+message = 'update 11305 13'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -32,7 +32,7 @@ def update(param):
                      '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=' + param['month'] + '&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
                      '=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100&RPLEVEL=%E5%B1%A4'
                      '&RPSECT=&RPROAD=&RPUSE=&RPZONE=&SPCASE=特殊-&BUILD1=999&BUILD2=999'
-                     '&BUILD3=999&P1MA_TYPEB_1=&P1MA_TYPEB_2=')
+                     '&BUILD3=999&P1MA_TYPEB_1=&P1MA_TYPEB_2=', verify=False)
     data = r.json()
     filtered_day = [item for item in data if item['P1MA_DATE'] in [str(day) for day in param['day']]]
     filtered_case = [item for item in filtered_day if any(case['name'] in item['P1MA_TYPEB_1'] for case in new)]
