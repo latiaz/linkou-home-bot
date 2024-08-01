@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11306 1'
+message = 'update 11307 1'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -67,7 +67,7 @@ def update(param):
         if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(天匯)':
             real = upup_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝':
+        elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝' or data['P1MA_TYPEB_1'] == '小·學堂':
             real = village_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '川弘INSIGHT':
