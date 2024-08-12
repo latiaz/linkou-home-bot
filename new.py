@@ -27,12 +27,16 @@ def update(param):
     linkou = key.open_by_url('https://docs.google.com/spreadsheets/d/1FLEjEXlhYzobw6JhJWQuw7OUfkq2GAx1xVrv87x7ugo/')
 
     global price, count, previous, today
+    headers = {
+        'Host': 'i.land.ntpc.gov.tw',
+        'Referer': 'https://i.land.ntpc.gov.tw/webgis/index.html?fun=realprice'
+    }
     r = requests.get('https://i.land.ntpc.gov.tw/landwa2/api/RPB_Alls/search3?RPTOWN1=%E6%9E%97%E5%8F%A3%E5%8D%80'
                      '&xmax=4000000&xmin=20000&ymax=40000000&ymin=200000&RPBUILD5=all&RPTYPE2=%E5%BB%BA%2B%E5%9C'
                      '%B0%2F%E5%9C%B0%2B%E5%BB%BA%2B%E8%BB%8A%2F&YMS=' + param['month'] + '&YME=11601&CA1=0&CA2=100000&FA1=0&FA2'
                      '=100000&MPS=0&MPE=10000000&TPS=0&TPE=900000000&FAGEmin=0&FAGEmax=100&RPLEVEL=%E5%B1%A4'
                      '&RPSECT=&RPROAD=&RPUSE=&RPZONE=&SPCASE=特殊-&BUILD1=999&BUILD2=999'
-                     '&BUILD3=999&P1MA_TYPEB_1=&P1MA_TYPEB_2=', verify=False)
+                     '&BUILD3=999&P1MA_TYPEB_1=&P1MA_TYPEB_2=', headers=headers, verify=False)
     data = r.json()
     filtered_day = [item for item in data if item['P1MA_DATE'] in [str(day) for day in param['day']]]
     filtered_case = [item for item in filtered_day if any(case['name'] in item['P1MA_TYPEB_1'] for case in new)]
