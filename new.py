@@ -2,7 +2,7 @@ import pygsheets
 import requests
 import json
 import re
-from surprise import upup_price, village_price, x1_x7_price, meet_price, insight_price
+from surprise import upup_price, village_price, x1_x7_price, meet_price, insight_price, cian_price
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
@@ -13,7 +13,7 @@ count = 0
 previous = ''
 today = {"new": {}, "update": {}}
 
-message = 'update 11307 1'
+message = 'update 11308 1 2 3 4 5 6 7 8 9 10 11 12'
 parts = message.split(' ')
 keyword = parts[0]
 month = parts[1]
@@ -68,20 +68,17 @@ def update(param):
             else:
                 previous = data['P1MA_TYPEB_1']
                 count = 1
-        if data['P1MA_TYPEB_1'] == '森聯上上謙-森越' or data['P1MA_TYPEB_1'] == '森聯上上謙-森越社區' or data['P1MA_TYPEB_1'] == '森聯上上謙-森治社區' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(天匯)':
+        if data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(天匯)':
             real = upup_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '盛德藝' or data['P1MA_TYPEB_1'] == '小·學堂':
+        elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '小·學堂':
             real = village_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '川弘INSIGHT':
-            real = insight_price(data)
+        elif data['P1MA_TYPEB_1'] == '群祥謙':
+            real = cian_price(data)
             price.append(real)
-        elif data['P1MA_TYPEB_1'] == '九揚華都' or data['P1MA_TYPEB_1'] == '聿德觀璟' or data['P1MA_TYPEB_1'] == '和洲艾美':
+        elif data['P1MA_TYPEB_1'] == '聿德觀璟' or data['P1MA_TYPEB_1'] == '聿翔沐風' or data['P1MA_TYPEB_1'] == '和洲艾美':
             real = x1_x7_price(data)
-            price.append(real)
-        elif data['P1MA_TYPEB_1'] == '遇見' or data['P1MA_TYPEB_1'] == '頤昌松琚' or data['P1MA_TYPEB_1'] == '頤昌柏舍' and data['P1MA_TYPEB_5'] != 'A5' or data['P1MA_TYPEB_1'] == '潤鴻日麗':
-            real = meet_price(data)
             price.append(real)
         elif data['P1MA_TYPEB_1'] == '敘日':
             real = x1_x7_price(data)

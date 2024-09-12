@@ -36,6 +36,22 @@ def village_price(data):
     ]
     return real
 
+def cian_price(data):
+    split = data['P1MA_TYPEB_5'].split("-")
+    real = [
+        data['P1MA_TYPEB_1'],  # 建案
+        split[0],  # 棟
+        re.sub('\\D', '', split[1]),  # 號
+        float(data['P1MA_TOTPRICE']) / 10000,  # 總價
+        float(data['P1MA_PARKPRICE']) / 10000,  # 車位
+        (float(data['P1MA_BUILD6']) - float(data['P1PA_PARKAREA'])) * 0.3025,  # 坪數
+        float(data['MeanPrice']) / 10000,  # 單價
+        data['P1MA_BUILD5'],  # 類型
+        data['P1MA_SPECIAL'],  # 備註
+        data['P1MA_DATE'],  # 日期
+    ]
+    return real
+
 
 def x1_x7_price(data):
     real = [
