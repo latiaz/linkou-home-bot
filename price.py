@@ -4,7 +4,7 @@ from export import export_price
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
-    new = [item for item in new if item['name'] == '宏樸日心說']
+    new = [item for item in new if item['name'] == '原森TWIN TOWERS']
 
 
 def update_price():
