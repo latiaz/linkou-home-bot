@@ -86,6 +86,24 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1191996634\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45446.68335503472,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "森鉅M-林境",
+    "height": 14,
+    "total": 111,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H", "A9": "I", "A10": "J"},
+    "tag": "lingin",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1073140659\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.415588749995,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1881142912\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.415932268515,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "森鉅M-逸境",
+    "height": 12,
+    "total": 77,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F", "A7": "G", "A8": "H"},
+    "tag": "yeegin",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"331278763\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.42014991898,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1459582038\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.42040481481,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "CLASSY HOME",
     "height": 24,
     "total": 486,
@@ -223,5 +241,14 @@
     "tag": "cian",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1982636334\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45026.113544583335,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"906454256\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45043.006337314815,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0,[]]"
+  },
+  {
+    "name": "群和FUTURE LINK",
+    "height": 13,
+    "total": 100,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F", "F": "G", "G": "H", "H": "I"},
+    "tag": "futurelink",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"72300185\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.40289010417,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"798422302\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.40325070602,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   }
 ]

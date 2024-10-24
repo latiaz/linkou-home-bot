@@ -7,7 +7,7 @@ from surprise import upup_price, village_price, x1_x7_price, meet_price, mei_pri
 
 with open("new.json", "r", encoding="utf-8") as f:
     new = json.load(f)
-    new = [item for item in new if item['name'] == '原森TWIN TOWERS']
+    new = [item for item in new if item['name'] == '森鉅M-逸境']
 
 
 def update_linkou():
@@ -40,7 +40,7 @@ def update_linkou():
                     real_price.append(status)
 
         for data in real_price:
-            if data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(天匯)':
+            if data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(森匯)' or data['P1MA_TYPEB_1'] == '亞昕森匯·天匯(天匯)' or data['P1MA_TYPEB_1'] == '森鉅M-林境' or data['P1MA_TYPEB_1'] == '森鉅M-逸境':
                 real = upup_price(data)
                 price.append(real)
             elif data['P1MA_TYPEB_1'] == '長耀里' or data['P1MA_TYPEB_1'] == '小·學堂':
