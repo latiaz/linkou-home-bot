@@ -59,6 +59,20 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1266901437\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45547.65334186342,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "築禾琢玥",
+    "height": 7,
+    "total": 188,
+    "table": {"A1": "B", "A2": "C", "A3": "D", "A5": "E", "A6": "F",
+              "B1": "G", "B2": "H", "B3": "I", "B5": "J", "B6": "K",
+              "C1": "L", "C2": "M", "C3": "N", "C5": "O",
+              "D1": "P", "D2": "Q", "D3": "R", "D5": "S", "D6": "T",
+              "E1": "U", "E2": "V", "E3": "W", "E5": "X", "E6": "Y",
+              "F1": "Z", "F2": "AA", "F3": "AB", "F5": "AC"},
+    "tag": "jhuoyue",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"993970786\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45611.72713225694,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.19685039370078738,0.19685039370078738,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1205889318\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45611.72833351852,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,2],[\"31.496062992125985x19.685039370078737\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "山侘一生",
     "height": 12,
     "total": 66,
