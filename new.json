@@ -19,6 +19,15 @@
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1691224862\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45427.399889039356,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   },
   {
+    "name": "九揚華樂",
+    "height": 20,
+    "total": 153,
+    "table": {"A": "B", "B": "C", "C": "D", "D": "E", "E": "F", "F": "G", "G": "H", "H": "I"},
+    "tag": "huayue",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1795326871\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45631.44463373843,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A3\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1160541303\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45631.44496278935,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
     "name": "福樺富貴莊園",
     "height": 23,
     "total": 65,
@@ -264,5 +273,16 @@
     "tag": "futurelink",
     "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"72300185\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.40289010417,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
     "price": "[null,null,null,null,null,null,null,null,null,0,[[\"798422302\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45589.40325070602,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
+  },
+  {
+    "name": "聯虹珺玥",
+    "height": 10,
+    "total": 54,
+    "table": {"A1": "B", "A2": "C",
+              "B1": "D", "B2": "E",
+              "C1": "F", "C2": "G"},
+    "tag": "pearl-boutique",
+    "linkou": "[null,null,null,null,null,null,null,null,null,0,[[\"1667543714\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45631.45053082176,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",1,2,1,[0.75,0.75,0.7,0.7]],null,0]",
+    "price": "[null,null,null,null,null,null,null,null,null,0,[[\"1674800338\"]],10000000,null,null,null,null,null,null,null,null,null,null,null,null,null,null,45631.4507771412,null,null,[1,null,0,0,0,0,0,0,1,1,2,1,null,null,2,1],[\"A4\",0,4,1,[0.75,0.75,0.7,0.7]],null,0]"
   }
 ]
